@@ -45,7 +45,7 @@ li a {
   list-style: none;
   font-size: 28px;
   font-family: 'Patrick Hand', cursive;
-  color: var(--secondary)
+  color: var(--secondary);
 }
 
 #main-title {
