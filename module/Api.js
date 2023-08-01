@@ -2,7 +2,6 @@ import LikesApi from '../src/Likes.js';
 
 export default class Movies {
   static url = 'https://api.tvmaze.com/search/shows?q=the';
-  // static url = 'https://api.tvmaze.com/shows/1';
   
     static counterMovies = async () => {
       const response = await fetch(this.url);
