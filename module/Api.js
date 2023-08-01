@@ -2,7 +2,7 @@ import LikesApi from '../src/Likes.js';
 
 export default class Movies {
   static url = 'https://api.tvmaze.com/search/shows?q=the';
-  
+
     static counterMovies = async () => {
       const response = await fetch(this.url);
       const data = await response.json();
@@ -14,7 +14,7 @@ export default class Movies {
         const title = document.querySelector('.title');
         if (title) title.textContent = `MovieHub (${count}) Movies `;
       });
-  
+
       return count;
     };
 
@@ -22,7 +22,7 @@ export default class Movies {
       const response = await fetch(this.url);
       const data = await response.json();
       const movieContainer = document.querySelector('.movie-container');
-  
+
       data.forEach((item) => {
         if (item.show.image !== null) {
           const div = document.createElement('div');
@@ -43,6 +43,7 @@ export default class Movies {
         this.addLikes();
       });
     }
+
     static addLikes = () => {
       const icons = document.querySelectorAll(' .fa-thumbs-up');
       icons.forEach((icon) => {
@@ -53,7 +54,7 @@ export default class Movies {
         });
       });
     };
-  
+
     static likes = () => {
       LikesApi.getLikes().then((data) => {
         data.forEach((item) => {
@@ -64,4 +65,4 @@ export default class Movies {
         });
       });
     };
-  };
+}

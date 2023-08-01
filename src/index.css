@@ -13,6 +13,7 @@
 
 body {
   color: blanchedalmond;
+
   /* background-color: var(--primary); */
 }
 
@@ -25,10 +26,10 @@ body {
 
 .logo {
   height: 76px;
-    border-radius: 30px;
+  border-radius: 30px;
 }
 
- .navbar {
+.navbar {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -37,16 +38,16 @@ body {
   font-weight: bold;
   letter-spacing: 2px;
   cursor: pointer;
- }
+}
 
- .head-list{
+.head-list {
   display: flex;
   text-decoration: none;
   list-style-type: none;
   gap: 90px;
- }
+}
 
- li a {
+li a {
   display: flex;
   text-decoration: none;
   list-style: none;
