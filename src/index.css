@@ -12,7 +12,8 @@
 }
 
 body {
-  color: var(--primary);
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 .logo {
@@ -44,9 +45,11 @@ li a {
   list-style: none;
   font-size: 28px;
   font-family: 'Patrick Hand', cursive;
+  color: var(--secondary)
 }
 
 #main-title {
+  color: var(--secondary);
   font-size: 35px;
   font-family: 'Patrick Hand', cursive;
 }
@@ -57,7 +60,7 @@ li a {
 
 .movie-container {
   --gap: 30px;
-  --num-cols: 4;
+  --num-cols: 5;
   --row-height: 200px;
 
   display: grid;
@@ -83,14 +86,16 @@ li a {
 }
 
 footer p {
+  font-weight: 600;
   margin: 0;
   font-size: 20px;
   font-family: 'Patrick Hand', cursive;
 }
 
 .likes p {
+  width: 100%;
   padding-top: 12px;
-  font-size: 18px;
+  font-size: 15px;
   font-family: 'Patrick Hand', cursive;
 }
 
@@ -108,12 +113,13 @@ footer p {
   width: 80%;
   justify-content: center;
   display: flex;
-  background-color: white;
+  background-color: var(--secondary);
 }
 
 /* Footer */
 footer {
-  background-color: white;
+  color: var(--primary);
+  background-color: darkgrey;
   padding: 40px;
   text-align: left;
   border-top: 1px solid black;
