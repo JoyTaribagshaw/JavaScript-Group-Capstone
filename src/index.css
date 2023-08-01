@@ -111,13 +111,13 @@ navbar h1 {
 }
 
 /* Footer */
-/* footer {
+footer {
   background-color: white;
   padding: 40px;
   text-align: left;
   border-top: 1px solid black;
-  border-bottom: 1px solid black; */
-/* } */
+  border-bottom: 1px solid black;
+}
 
 footer p {
   margin: 0;
