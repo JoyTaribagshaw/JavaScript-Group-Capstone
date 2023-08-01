@@ -5,4 +5,3 @@ import LikesApi from './Likes.js';
 Movies.displayMovies();
 LikesApi.getLikes();
 Movies.counterMovies();
-
