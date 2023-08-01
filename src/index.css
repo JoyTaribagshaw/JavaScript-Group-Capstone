@@ -1,18 +1,19 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --primary: #0e0e0e;
   --secondary: #e5d4d4;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html,
 body {
-  margin: 0;
-  padding: 0;
   color: blanchedalmond;
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
 }
 
 /* body {
@@ -22,18 +23,36 @@ body {
   min-height: 100vh;
 } */
 
-.navbar {
+.logo {
+  height: 76px;
+    border-radius: 30px;
+}
+
+ .navbar {
   display: flex;
-  justify-content: left;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 10px 20px 0 20px;
-  color: blanchedalmond;
+  padding: 50px 20px;
+  color: var(--primary);
   font-weight: bold;
   letter-spacing: 2px;
   cursor: pointer;
+ }
+
+ .head-list{
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  gap: 90px;
+ }
+
+ li a {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
 }
 
-navbar h1 {
+/* navbar h1 {
   font-size: 15px;
   font-weight: bold;
 }
@@ -51,14 +70,6 @@ navbar ul {
   gap: 15px;
 }
 
-li a {
-  display: flex;
-  text-decoration: none;
-  list-style: none;
-  color: #ababab;
-  border: 2px solid green;
-}
-
 h2 {
   text-align: center;
-}
+} */
