@@ -1,5 +1,5 @@
+/* eslint-disable-next-line no-unused-vars */
 const commentId = require('../src/Apicomment.js');
-// import commentId from '../src/Apicomment.js';
 const LikesApi = require('../src/Likes.js');
 
 class Movies {
