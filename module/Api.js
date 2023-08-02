@@ -1,7 +1,8 @@
-import commentId from '../src/Apicomment.js';
-import LikesApi from '../src/Likes.js';
+const commentId = require('../src/Apicomment.js');
+// import commentId from '../src/Apicomment.js';
+const LikesApi = require('../src/Likes.js');
 
-export default class Movies {
+class Movies {
   static url = 'https://api.tvmaze.com/search/shows?q=the';
 
   static counterMovies = async () => {
