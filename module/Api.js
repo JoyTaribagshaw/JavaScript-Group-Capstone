@@ -72,6 +72,7 @@ import LikesApi from '../src/Likes.js';
 
 export default class Movies {
   static url = 'https://api.tvmaze.com/search/shows?q=the';
+  // static url = 'https://api.tvmaze.com/shows';
 
   static counterMovies = async () => {
     const response = await fetch(this.url);
@@ -82,7 +83,7 @@ export default class Movies {
         count += 1;
       }
       const title = document.querySelector('.title');
-      if (title) title.textContent = `MovieHub (${count}) Movies `;
+      if (title) title.textContent = `At The Movies (${count}) Movies `;
     });
 
     return count;
@@ -103,7 +104,7 @@ export default class Movies {
         <li>${item.show.name}</li>
         <div class="likes">
          <i class="fa-regular fa-thumbs-up" id="${item.show.id}"></i>
-          <p>0 Likes</p>
+          <p>1 Likes</p>
         </div>
       </div>      
       <button id="${item.show.id}" class="button">Comments</button>`;
@@ -160,7 +161,7 @@ export default class Movies {
        </div>
          
            <div class="form-div">
-           <h5 class="center">Add comments</h5>
+           <h5 class="center">Add a comment</h5>
            <form class = "form" action="">
              <input class="username" type="text" placeholder="Your name ...">
              <input class="comment" type="text" placeholder="Your comment ...">
