@@ -156,27 +156,27 @@ export default class Movies {
           this.likes();
         });
       });
-  
+
       const likes = localStorage.getItem(`likes_${icon.id}`);
       if (likes !== null) {
         icon.nextElementSibling.innerHTML = `${likes} likes`;
       } else {
-        icon.nextElementSibling.innerHTML = `0 likes`;
+        icon.nextElementSibling.innerHTML = '0 likes';
         localStorage.setItem(`likes_${icon.id}`, 0);
       }
     });
   };
-  
+
   static likes = () => {
     LikesApi.getLikes().then((data) => {
       data.forEach((item) => {
         const icon = document.getElementById(`${item.item_id}`);
         if (icon) {
           icon.nextElementSibling.innerHTML = `${item.likes} likes`;
-  
+
           localStorage.setItem(`likes_${item.item_id}`, item.likes);
         }
       });
     });
   };
- }
+}
