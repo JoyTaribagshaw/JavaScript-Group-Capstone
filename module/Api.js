@@ -35,7 +35,7 @@
 //            <i class="fa-regular fa-thumbs-up" id="${item.show.id}"></i>
 //             <p>0 Likes</p>
 //           </div>
-//         </div>      
+//         </div>
 //         <button id="${item.show.id}" class="button">Comments</button>`;
 //           movieContainer.appendChild(div);
 //         }
