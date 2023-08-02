@@ -1,8 +1,7 @@
-/* eslint-disable-next-line no-unused-vars */
 const commentId = require('../src/Apicomment.js');
 const LikesApi = require('../src/Likes.js');
 
-class Movies {
+export default class Movies {
   static url = 'https://api.tvmaze.com/search/shows?q=the';
 
   static counterMovies = async () => {
