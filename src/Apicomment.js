@@ -61,9 +61,8 @@ class CommentApi {
     return data;
   };
 
-  static counterComments = (data) => {
-    return data.length; // Use array's length property to get the count
-  };
+  static counterComments = (data) => data.length // Use array's length property to get the count
+  ;
 }
 
 module.exports = CommentApi;
