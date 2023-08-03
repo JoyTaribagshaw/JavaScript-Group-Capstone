@@ -1,6 +1,6 @@
 export default class LikesApi {
     static url =
-      'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/jcfL4bzfqSk0ihg1PeIe/likes';
+      'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/s1szyoelhRqTHhs2c19P/likes';
 
     static getLikes = async () => {
       const res = await fetch(this.url);

@@ -36,7 +36,7 @@
 
 class CommentApi {
   static commentId =
-    'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/jcfL4bzfqSk0ihg1PeIe/comments';
+    'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/s1szyoelhRqTHhs2c19P/comments';
 
   static getComments = async (id) => {
     const response = await fetch(`${this.commentId}?item_id=${id}`);
