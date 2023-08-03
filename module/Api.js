@@ -1,6 +1,7 @@
+import countMovies from './counter.js';
+
 const commentId = require('../src/Apicomment.js');
 const LikesApi = require('../src/Likes.js');
-import countMovies from './counter.js';
 
 export default class Movies {
   static url = 'https://api.tvmaze.com/search/shows?q=the';
