@@ -1,7 +1,7 @@
+import LikesApi from '../src/Likes.js';
 import countMovies from './counter.js';
 
 const commentId = require('../src/Apicomment.js');
-const LikesApi = require('../src/Likes.js');
 
 export default class Movies {
   static url = 'https://api.tvmaze.com/search/shows?q=the';
@@ -118,7 +118,7 @@ export default class Movies {
     countMovies();
   };
 
-  // comment section
+  // comments section
   static displayComment = (id) => {
     const username = document.querySelector('.username');
     const comment = document.querySelector('.comment');
