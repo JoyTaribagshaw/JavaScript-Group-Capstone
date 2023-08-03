@@ -4,7 +4,7 @@
   "description": "This is a template repository for setting up a project with Webpack and linters (ESLint and Stylelint) configured. It provides a solid foundation for building JavaScript and CSS projects while ensuring code quality and adherence to coding standards.",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --env=jsdom --transformIgnorePatterns \"[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$\"",
     "start": "webpack serve --open",
     "build": "webpack",
     "predeploy": "npm run build"
