@@ -96,7 +96,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link of our Top Movies](https://github.com/JoyTaribagshaw/JavaScript-Group-Capstone/dist/)
+- [Live Demo Link of our Top Movies](https://joytaribagshaw.github.io/JavaScript-Group-Capstone/dist/)
 
 - [Live Video Link of our Top Movies](https://drive.google.com/file/d/1sgKACINW_ksQfB48evhNdZbld7Dz-FpZ/view?usp=sharing)
 
