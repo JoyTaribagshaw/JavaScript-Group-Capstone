@@ -150,7 +150,7 @@ export default class Movies {
       });
     });
   };
-  
+
   static addLikes = () => {
     const icons = document.querySelectorAll(' .fa-thumbs-up');
     icons.forEach((icon) => {
@@ -186,4 +186,3 @@ export default class Movies {
     });
   };
 }
-
