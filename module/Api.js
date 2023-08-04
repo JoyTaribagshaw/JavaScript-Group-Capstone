@@ -154,18 +154,21 @@ export default class Movies {
   static addLikes = () => {
     const icons = document.querySelectorAll(' .fa-thumbs-up');
     icons.forEach((icon) => {
-      icon.addEventListener('click', () => {
-        LikesApi.setLikes(parseInt(icon.id, 10)).then(() => {
-          this.likes();
+      if (!icon.hasEventListener) {
+        icon.hasEventListener = true;
+        icon.addEventListener('click', () => {
+          LikesApi.setLikes(parseInt(icon.id, 10)).then(() => {
+            this.likes();
+          });
         });
-      });
 
-      const likes = localStorage.getItem(`likes_${icon.id}`);
-      if (likes !== null) {
-        icon.nextElementSibling.innerHTML = `${likes} likes`;
-      } else {
-        icon.nextElementSibling.innerHTML = '0 likes';
-        localStorage.setItem(`likes_${icon.id}`, 0);
+        const likes = localStorage.getItem(`likes_${icon.id}`);
+        if (likes !== null) {
+          icon.nextElementSibling.innerHTML = `${likes} likes`;
+        } else {
+          icon.nextElementSibling.innerHTML = '0 likes';
+          localStorage.setItem(`likes_${icon.id}`, 0);
+        }
       }
     });
   };
@@ -183,3 +186,4 @@ export default class Movies {
     });
   };
 }
+
