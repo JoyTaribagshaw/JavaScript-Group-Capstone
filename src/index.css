@@ -1,22 +1,258 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
-  --primary: #ddd;
+  --primary: #0e0e0e;
   --secondary: #e5d4d4;
 }
 
-html,
 body {
-  margin: 0;
-  padding: 0;
   background-color: var(--primary);
+  color: var(--secondary);
 }
 
-body {
+.logo {
+  height: 76px;
+  border-radius: 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px 20px;
+  color: var(--primary);
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.head-list {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  gap: 90px;
+}
+
+li a {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  font-size: 28px;
+  font-family: 'Patrick Hand', cursive;
+  color: var(--secondary);
+}
+
+#main-title {
+  color: var(--secondary);
+  font-size: 35px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+/* h2 {
+  text-align: center;
+} */
+
+.movie-container {
+  --gap: 30px;
+  --num-cols: 5;
+  --row-height: 200px;
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: 1fr 1fr 1fr;
+  gap: var(--gap);
+  padding: var(--gap);
+}
+
+.movie-container img {
+  width: 100%;
+}
+
+.each {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-container li {
+  list-style-type: none;
+  font-size: 18px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+footer p {
+  font-weight: 600;
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.likes p {
+  width: 100%;
+  padding-top: 12px;
+  font-size: 15px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.fa-thumbs-up::before {
+  font-size: 20px;
+}
+
+.button {
+  border: 3px solid black;
+  padding: 10px;
+  margin: 20px auto;
+  font-size: 18px;
+  font-family: 'Patrick Hand', cursive;
+  box-shadow: 6px 3px 4px;
+  width: 80%;
+  justify-content: center;
+  display: flex;
+  background-color: var(--secondary);
+}
+
+/* Footer */
+footer {
+  color: var(--primary);
+  background-color: darkgrey;
+  padding: 40px;
+  text-align: left;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.each li {
+  font-family: cursive, sans-serif;
+  font-size: 25px;
+}
+
+.details li {
+  list-style: none;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 2px 5px 7px 5px rgba(29, 26, 26, 0.75);
+}
+
+.display-comments li {
+  list-style-type: none;
+  text-align: center;
+  padding: 0.3rem;
+}
+
+.details li:hover {
+  background-color: rgb(93, 12, 12);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.popup-image img {
+  height: 200px;
+  width: 200px;
+}
+
+.each-movie img {
+  border-radius: 12px;
+}
+
+.popup {
+  background-color: red;
+  position: relative;
+  height: 90vh;
+  width: 60vw;
+  color: red;
+}
+
+.show-popup {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: fixed;
+  -webkit-backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.popups {
+  position: absolute;
+  width: 81%;
+  margin: 0 auto;
+  top: 51%;
+  padding: 21px;
+  max-width: 51%;
+  left: 51%;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow-y: auto;
+  height: 91vh;
+  background-color: black;
+  background-size: cover;
+}
+
+.firstPopUpDetails {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.closebtn {
+  display: flex;
+  justify-content: end;
+}
+
+.contents {
+  border-radius: 12px;
+  padding-top: 10px;
+  margin: 10px;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  padding-top: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.center {
+  text-align: center;
+  margin-top: 5px;
+  padding: 4px;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.username {
+  padding: 5px;
+}
+
+.summary p {
+  text-align: center;
+  width: 25rem;
+  color: rgb(232, 128, 128);
+  margin: 0 auto;
+}
+
+.comment {
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-}
-
-* {
-  box-sizing: border-box;
 }
