@@ -1,76 +1,253 @@
-# Webpack Linters Template
+# Top Movies
+<a name="readme-top"></a>
 
-This is a template repository for setting up a project with Webpack and linters (ESLint and Stylelint) configured. It provides a solid foundation for building JavaScript and CSS projects while ensuring code quality and adherence to coding standards.
+<div align="center">
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
 
-## Features
+  ![Alt text](image-1.png)
+ 
+  <br/>
 
-- Webpack configuration for bundling JavaScript and CSS files
-- ESLint for JavaScript linting with a recommended configuration
-- Stylelint for CSS linting with a recommended configuration
-- Pre-commit hooks to run linters before committing changes
-- Deployment script for deploying the project to GitHub Pages
+  <h3><b>Top Movies</b></h3>
 
-## Getting Started
+</div>
 
-To use this template and set up your project, follow these steps:
+<!-- TABLE OF CONTENTS -->
 
-1. Click on the "Use this template" button or manually clone the repository.
-2. Clone the repository to your local machine using Git.
-   ```bash
-   git clone https://github.com/kit0-0/webpack-linters-template.git
-   ```
-3. Navigate to the project directory.
-   ```bash
-   cd webpack-linters-template
-   ```
-4. Install the dependencies.
-   ```bash
-   npm install
-   ```
-5. Start the development server.
-   ```bash
-   npm start
-   ```
-   This will compile the project and launch the development server.
-6. Begin coding your project, writing JavaScript and CSS code in the `src` directory.
+# 📗 Table of Contents
 
-## Scripts
+- [Top Movies](#topmovies)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[topMovies\] ](#-topmovies-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment ](#deployment-)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [❓ FAQ (OPTIONAL) ](#-faq-optional-)
+  - [📝 License ](#-license-)
 
-The following scripts are available in the project:
+<!-- PROJECT DESCRIPTION -->
 
-- `npm start`: Starts the development server.
-- `npm run build`: Builds the project for production.
-- `npm run lint`: Runs ESLint and Stylelint to check for linting issues.
-- `npm test`: Runs the project's tests (if any).
-- `npm run deploy`: Deploys the project to GitHub Pages.
+# 📖 [Top Movies] <a name="about-project"></a>
 
-## Configuration
+**[In Top Movies, users can like Movies, TV Shows, and they can check out the details of every Movie or Show by clicking on the Comment Button. It also allows you to like the Movies. All data is preserved thanks to the external TVMaze API and Involvement API services. Fetching of the Movies, Details of the Movies, Adding and Getting Likes, and Comments Data are all preserved by the aforementioned APIs. Comment and Like buttons are there to update the Comments and Likes. Async & Await are also implemented along with some styling.]**
 
-The project includes default configurations for ESLint and Stylelint, located in the root directory:
+## 🛠 Built With <a name="built-with"></a>
 
-- `.eslintrc.json`: ESLint configuration file with recommended settings.
-- `.stylelintrc.json`: Stylelint configuration file with recommended settings.
+### Tech Stack <a name="tech-stack"></a>
 
-You can modify these configuration files according to your project's requirements.
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="#">HTML, CSS, JavaScript, Webpack, API</a></li>
+  </ul>
+</details>
 
-## Pre-commit Hooks
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://localhost:8081/">Dev Server</a></li>
+  </ul>
+</details>
 
-The project is configured to run the linters automatically before committing changes, ensuring that code quality and style standards are maintained. If any issues are found, the commit will be blocked until the issues are resolved.
+<details>
+  <summary>Pakage Manager</summary>
+  <ul>
+    <li><a href="#">NPM</a></li>
+  </ul>
+</details>
+<details>
+  <summary>API</summary>
+  <ul>
+    <li><a href="#">Post Master</a></li>
+  </ul>
+</details>
 
-## Deploying to GitHub Pages
+<!-- Features -->
 
-To deploy your project to GitHub Pages, use the following script:
+### Key Features <a name="key-features"></a>
 
-```bash
-npm run deploy
+- **[Displays List of Movies, Likes, Details and Comments]**
+- **[Addition of New Likes and Comments]**
+- **[Number of Movies or Shows on Homepage, number of Likes, and number of Comments are all counted and being displayed along with the updation]**
+- **[TVMaze and Involvement APIs are responsible for storage and retrieval of Data]**
+- **[A Like and a Comment button is there to fetch all the Likes, Details, and Comments using APIs.]**
+- **[Webpack is managing all the dependencies and auto loading in browser]**
+- **[All the scetions and functionality is re-created by ES6 Modules]**
+- **[Jest Tests and Coverage flags are implemented to test the Counters]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+
+- [Live Demo Link of our Top Movies]()
+
+- [Live Video Link of our Top Movies](https://drive.google.com/file/d/1sgKACINW_ksQfB48evhNdZbld7Dz-FpZ/view?usp=sharing)
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+- A web browser to view output e.g [Google Chrome](https://www.google.com/chrome/).
+- An IDE e.g [Visual studio code](https://code.visualstudio.com/).
+- `node` should be installed in your local machine, [node website](https://nodejs.org/en/download/).
+- Install the `npm` package manager use this [to install both node and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+- [A terminal](https://code.visualstudio.com/docs/terminal/basics).
+
+### Setup
+
+Clone this repository to your desired folder or download the Zip folder:
+
+```
+https://github.com/JoyTaribagshaw/JavaScript-Group-Capstone
 ```
 
-This script will use `gh-pages` to deploy the contents of the `dist` directory to the `gh-pages` branch of your repository. Make sure to set up GitHub Pages for your repository before running this command.
+- Navigate to the location of the folder in your machine:
 
-## Contributing
+**``you@your-Pc-name:~$ cd JavaScript-Group-Capstone``**
 
-If you have suggestions, improvements, or bug fixes, please feel free to contribute to this project. Fork the repository, make your changes, and submit a pull request with a clear description of your changes.
+### Install
 
-## License
+To install all dependencies, run:
 
-The project is licensed under the [MIT License](LICENSE). Feel free to use and modify the template according to your needs.
+```
+npm install
+```
+
+### Usage
+
+To run the project, follow these instructions:
+
+- After Cloning this repo to your local machine.
+- Open the `index.html` in your browser.
+- You can also use `npm start` command in terminal to run this at localhost:8080
+
+### Run tests
+
+To run tests, run the following command:
+
+- Track HTML linter errors run:
+```
+npx hint .
+```
+- Track CSS linter errors run:
+```
+npx stylelint "**/*.{css,scss}"
+```
+- Track JavaScript linter errors run:
+```
+npx eslint .
+```
+- run test:
+```
+npm test 
+```
+
+### Deployment <a name="deployment"></a>
+
+You can deploy this project using: GitHub Pages,
+- I used GitHub Pages to deploy my website.
+- For more information about publishing sources, see "[About GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites)".
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤   **Maris Kapuka**
+- GitHub: [@githubhandle](https://github.com/riskmaris)
+
+👤 *Joy Tari*
+
+- GitHub: [Joy](https://github.com/JoyTaribagshaw)
+- Twitter: [Joy](https://twitter.com/JoyTariBagshaw)
+- LinkedIn: [Joy](www.linkedin.com/in/joytaribagshaw)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[More styles will be added to make my project look more beautiful and appealing.]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, just reach out to me for more projects even better than this, and please give it a star ⭐️.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank my fellow Authors, my friend, my code reviewers and Microverse.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+- **[How can the project be improved]**
+
+  - [More features can be intergrated by adding more pages]
+
+- **[Can I use this project for study purposes]**
+
+  - [Yes]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](https://github.com/JoyTaribagshaw/JavaScript-Group-Capstone/blob/main/LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
